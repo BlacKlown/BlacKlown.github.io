@@ -97,7 +97,7 @@
 <meta property="og:description" content="前言历经千辛万苦，我又用Hexo+GitHub搭建了一个新的博客。为了方便自己以后犯错误的时候能快速重新搭建（估计不会），也为了给一些后来者做一个参考，所以我打算写下这篇文字教程。
 
 准备因为这个博客是用Hexo+GitHub搭建的，所以我们需要先下载Git和Node.js，并且进行安装。然后在GitHub上注册一个账号。还需要有一个文本编辑器，我用的是sublime text 3。sublime">
-<meta property="og:updated_time" content="2017-03-20T14:07:03.449Z">
+<meta property="og:updated_time" content="2017-03-21T04:24:44.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 搭建博客经验">
 <meta name="twitter:description" content="前言历经千辛万苦，我又用Hexo+GitHub搭建了一个新的博客。为了方便自己以后犯错误的时候能快速重新搭建（估计不会），也为了给一些后来者做一个参考，所以我打算写下这篇文字教程。
@@ -415,7 +415,7 @@
 <p>然后在ssh-key文件夹内找到<code>id_rsa</code>文件，用文本编辑器打开它，将其内容全部拷贝。在你的GitHub账户<code>Settings</code>中找到<code>SSh and GPG keys</code>，选择<code>New SSH key</code>。<code>Title</code>可以不填，<code>Key</code>中粘贴你在<code>id_rsa</code>中拷贝的内容，然后点击<code>Add SSH key</code>。<br>最后可以在<code>Git Bash</code>输入以下命令进行验证：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure></p>
 <hr>
 <h1 id="把博客部署至GitHub"><a href="#把博客部署至GitHub" class="headerlink" title="把博客部署至GitHub"></a>把博客部署至GitHub</h1><p>在<code>Git Bash</code>输入以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
-<p>然后你就可以在浏览器地址栏中输入<code>your_user_name.github.io</code>看到自己的博客了。</p>
+<p>然后你就可以在浏览器地址栏中输入<code>your_user_name.github.io</code>看到自己的博客了。<br>以后每次在本地对博客进行修改之后便可执行以下代码上传至<code>GitHub</code>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g -d</div></pre></td></tr></table></figure></p>
 <hr>
 <h1 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h1><p>在<code>Git Bash</code>中输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new &quot;文章标题&quot;</div></pre></td></tr></table></figure></p>
 <p>这会在你的<code>blog/source/_posts</code>文件夹中生成一个新文件<code>文章标题.md</code>，用文本编辑器打开之后就可以编写你的文章了。需要注意的是这个文章的编写遵循<a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown</a>语法，在编写之前，你需要了解一些Markdown的<a href="http://www.jianshu.com/p/250e36bb5690" target="_blank" rel="external">基本语法</a>。</p>
