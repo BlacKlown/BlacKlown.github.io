@@ -96,7 +96,7 @@ outline-offset
 主要思路是先利用border属性视觉">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS背景（一）">
-<meta property="og:url" content="https://BlacKlown.github.io/2018/06/21/css-background-01/index.html">
+<meta property="og:url" content="https://BlacKlown.github.io/2018/06/21/CSS-BackGround-01/index.html">
 <meta property="og:site_name" content="BlacKlown's Blog">
 <meta property="og:description" content="最近看了一阵子书，看了些前端的东西，特别是《CSS揭秘》这本书，看了之后受益颇多。虽然还只看了前几章，但我已经被书中对CSS的运用技巧所惊叹。所以打算在这里写一些自己在书中学到的和自己琢磨到的一点东西。
 
@@ -105,9 +105,9 @@ border
 outline
 outline-offset
 主要思路是先利用border属性视觉">
-<meta property="og:image" content="https://BlacKlown.github.io/2018/06/21/css-background-01/1.png">
-<meta property="og:image" content="https://BlacKlown.github.io/2018/06/21/css-background-01/2.png">
-<meta property="og:image" content="https://BlacKlown.github.io/2018/06/21/css-background-01/3.png">
+<meta property="og:image" content="https://BlacKlown.github.io/2018/06/21/CSS-BackGround-01/css-background-01/1.png">
+<meta property="og:image" content="https://BlacKlown.github.io/2018/06/21/CSS-BackGround-01/css-background-01/2.png">
+<meta property="og:image" content="https://BlacKlown.github.io/2018/06/21/CSS-BackGround-01/css-background-01/3.png">
 <meta property="og:updated_time" content="2018-06-22T01:24:54.672Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS背景（一）">
@@ -118,7 +118,7 @@ border
 outline
 outline-offset
 主要思路是先利用border属性视觉">
-<meta name="twitter:image" content="https://BlacKlown.github.io/2018/06/21/css-background-01/1.png">
+<meta name="twitter:image" content="https://BlacKlown.github.io/2018/06/21/CSS-BackGround-01/css-background-01/1.png">
 
 
 
@@ -146,7 +146,7 @@ outline-offset
 
 
 
-  <link rel="canonical" href="https://BlacKlown.github.io/2018/06/21/css-background-01/"/>
+  <link rel="canonical" href="https://BlacKlown.github.io/2018/06/21/CSS-BackGround-01/"/>
 
 
 
@@ -312,7 +312,7 @@ outline-offset
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://BlacKlown.github.io/2018/06/21/css-background-01/">
+    <link itemprop="mainEntityOfPage" href="https://BlacKlown.github.io/2018/06/21/CSS-BackGround-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="BlacKlown">
@@ -412,14 +412,14 @@ outline-offset
 <pre><code>border
 outline
 outline-offset
-</code></pre><p>主要思路是先利用border属性视觉上增大背景大小，然后用outline属性画出虚线，并且将outline-offset属性设置为负值，将虚线向内移动达成订装线的视觉效果。效果如下图：<br><img src="/2018/06/21/css-background-01/1.png" alt="描边背景"><br>主要代码：</p>
+</code></pre><p>主要思路是先利用border属性视觉上增大背景大小，然后用outline属性画出虚线，并且将outline-offset属性设置为负值，将虚线向内移动达成订装线的视觉效果。效果如下图：<br><img src="/2018/06/21/CSS-BackGround-01/css-background-01/1.png" alt="描边背景"><br>主要代码：</p>
 <pre><code>background: skyblue;
 border: 10px skyblue solid;
 border-radius: 10px;
 outline: 1px dashed white;
 outline-offset: -10px;
 </code></pre><h1 id="条纹背景"><a href="#条纹背景" class="headerlink" title="条纹背景"></a>条纹背景</h1><p>条纹背景很好理解，就是由不同颜色的条纹填充的背景，主要用到了<code>background: linear-gradient()</code>和<code>background: repeating-linear-gradient</code>。</p>
-<h2 id="横向和竖向条纹"><a href="#横向和竖向条纹" class="headerlink" title="横向和竖向条纹"></a>横向和竖向条纹</h2><p>横向条纹和竖向条纹是比较好实现的两种条纹背景，横向条纹依靠<code>linear-gradient(color1 , color2)</code>的渐变特性，只要将color1的终止位置和color2的起始位置设置为同一个值，颜色就会在一个无限小的区域渐变转换，从效果上来看就是颜色直接发生了转变，而竖向条纹则只要在<code>linear-gradient()</code>中设置一个90°的旋转就好了，效果如下图：<br><img src="/2018/06/21/css-background-01/2.png" alt="条纹背景1"><br>主要代码：</p>
+<h2 id="横向和竖向条纹"><a href="#横向和竖向条纹" class="headerlink" title="横向和竖向条纹"></a>横向和竖向条纹</h2><p>横向条纹和竖向条纹是比较好实现的两种条纹背景，横向条纹依靠<code>linear-gradient(color1 , color2)</code>的渐变特性，只要将color1的终止位置和color2的起始位置设置为同一个值，颜色就会在一个无限小的区域渐变转换，从效果上来看就是颜色直接发生了转变，而竖向条纹则只要在<code>linear-gradient()</code>中设置一个90°的旋转就好了，效果如下图：<br><img src="/2018/06/21/CSS-BackGround-01/css-background-01/2.png" alt="条纹背景1"><br>主要代码：</p>
 <pre><code>.d1{
     background: linear-gradient(skyblue 50%, pink 50%);
     background-size: 100% 50px;
@@ -428,7 +428,7 @@ outline-offset: -10px;
     background: linear-gradient(90deg, skyblue 50%, pink 50%);
     background-size: 50px 100%;
 }
-</code></pre><h2 id="斜向条纹1"><a href="#斜向条纹1" class="headerlink" title="斜向条纹1"></a>斜向条纹1</h2><p>斜向条纹其实也是由横向条纹旋转而来，但是仅仅像设置竖向条纹那样简单的设置一个角度的话就会出现下面图片中第一个背景图一样的效果，会发现跟想象中的不太一样，他们不能很好的拼接在一起，要实现第二个背景的效果需要进行更多的设置来将他们拼接在一起。<br><img src="/2018/06/21/css-background-01/3.png" alt="条纹背景2"><br>主要代码：</p>
+</code></pre><h2 id="斜向条纹1"><a href="#斜向条纹1" class="headerlink" title="斜向条纹1"></a>斜向条纹1</h2><p>斜向条纹其实也是由横向条纹旋转而来，但是仅仅像设置竖向条纹那样简单的设置一个角度的话就会出现下面图片中第一个背景图一样的效果，会发现跟想象中的不太一样，他们不能很好的拼接在一起，要实现第二个背景的效果需要进行更多的设置来将他们拼接在一起。<br><img src="/2018/06/21/CSS-BackGround-01/css-background-01/3.png" alt="条纹背景2"><br>主要代码：</p>
 <pre><code>.d1{   //与想象中的效果不太一样
     background: linear-gradient(45deg, skyblue 50%, pink 50%);
     background-size: 50px 50px;
