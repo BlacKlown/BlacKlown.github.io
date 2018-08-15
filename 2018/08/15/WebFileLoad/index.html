@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT, Blog" />
+  <meta name="keywords" content="HTML," />
 
 
 
@@ -87,15 +87,31 @@
 
 
 
-<meta name="description" content="咸鱼一条">
-<meta property="og:type" content="website">
-<meta property="og:title" content="BlacKlown's Blog">
-<meta property="og:url" content="https://BlacKlown.github.io/archives/2017/09/index.html">
+<meta name="description" content="今天看了看HTML文件加载的问题，打算记点笔记。大体流程关于&amp;lt;link&amp;gt;、&amp;lt;script&amp;gt;和&amp;lt;img&amp;gt;三个标签。
+主体加载流程
+浏览器由上至下加载html文件。
+加载到&amp;lt;link&amp;gt;标签，浏览器向服务器发送请求获取.css文件，然后html文件和css文件并行加载。
+加载到&amp;lt;script&amp;gt;标签，如果没有引用外部文件就立即执行。
+如果&amp;lt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Html,CSS,JS文件加载顺序">
+<meta property="og:url" content="https://BlacKlown.github.io/2018/08/15/WebFileLoad/index.html">
 <meta property="og:site_name" content="BlacKlown's Blog">
-<meta property="og:description" content="咸鱼一条">
+<meta property="og:description" content="今天看了看HTML文件加载的问题，打算记点笔记。大体流程关于&amp;lt;link&amp;gt;、&amp;lt;script&amp;gt;和&amp;lt;img&amp;gt;三个标签。
+主体加载流程
+浏览器由上至下加载html文件。
+加载到&amp;lt;link&amp;gt;标签，浏览器向服务器发送请求获取.css文件，然后html文件和css文件并行加载。
+加载到&amp;lt;script&amp;gt;标签，如果没有引用外部文件就立即执行。
+如果&amp;lt;">
+<meta property="og:updated_time" content="2018-08-15T09:02:57.567Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BlacKlown's Blog">
-<meta name="twitter:description" content="咸鱼一条">
+<meta name="twitter:title" content="Html,CSS,JS文件加载顺序">
+<meta name="twitter:description" content="今天看了看HTML文件加载的问题，打算记点笔记。大体流程关于&amp;lt;link&amp;gt;、&amp;lt;script&amp;gt;和&amp;lt;img&amp;gt;三个标签。
+主体加载流程
+浏览器由上至下加载html文件。
+加载到&amp;lt;link&amp;gt;标签，浏览器向服务器发送请求获取.css文件，然后html文件和css文件并行加载。
+加载到&amp;lt;script&amp;gt;标签，如果没有引用外部文件就立即执行。
+如果&amp;lt;">
 
 
 
@@ -123,14 +139,14 @@
 
 
 
-  <link rel="canonical" href="https://BlacKlown.github.io/archives/2017/09/"/>
+  <link rel="canonical" href="https://BlacKlown.github.io/2018/08/15/WebFileLoad/"/>
 
 
 
 
 
 <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
-  <title> 归档 | BlacKlown's Blog </title>
+  <title> Html,CSS,JS文件加载顺序 | BlacKlown's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -165,7 +181,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -269,66 +285,219 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 7 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://BlacKlown.github.io/2018/08/15/WebFileLoad/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BlacKlown">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BlacKlown's Blog">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Html,CSS,JS文件加载顺序
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-15T17:01:43+08:00">
+                2018-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/WEB前端/" itemprop="url" rel="index">
+                    <span itemprop="name">WEB前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+            
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <p>今天看了看HTML文件加载的问题，打算记点笔记。<br>大体流程关于<code>&lt;link&gt;</code>、<code>&lt;script&gt;</code>和<code>&lt;img&gt;</code>三个标签。</p>
+<h1 id="主体加载流程"><a href="#主体加载流程" class="headerlink" title="主体加载流程"></a>主体加载流程</h1><ol>
+<li>浏览器由上至下加载html文件。</li>
+<li>加载到<code>&lt;link&gt;</code>标签，浏览器向服务器发送请求获取<code>.css</code>文件，然后html文件和css文件并行加载。</li>
+<li>加载到<code>&lt;script&gt;</code>标签，如果没有引用外部文件就立即执行。</li>
+<li>如果<code>&lt;script&gt;</code>标签引用了外部文件，就下载外部文件，并阻塞其他代码的下载和解析。</li>
+<li>加载到<code>&lt;img&gt;</code>标签，向服务器发送请求下载图片，此时浏览器不会等待图片下载完成，而是继续渲染余下代码。</li>
+<li>服务器返回图片，此时图片需占用一定的空间，这会影响到后面段落的排布，于是浏览器又重新渲染这部分代码。</li>
+</ol>
+<blockquote>
+<p>JS文件会阻塞DOM树解析和渲染，CSS文件不会阻塞DOM树解析，但是CSS文件会阻塞DOM树渲染，并且阻塞后面JS语句的执行。</p>
+</blockquote>
+<h1 id="优化加载、渲染速度，提高用户体验"><a href="#优化加载、渲染速度，提高用户体验" class="headerlink" title="优化加载、渲染速度，提高用户体验"></a>优化加载、渲染速度，提高用户体验</h1><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><ol>
+<li>减少无意义的空格符、换行符、制表符。</li>
+<li>把内联、行内的CSS、JS代码改为外联文件。</li>
+<li>尽量少引用不同域名的文件。</li>
+</ol>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><ol>
+<li>尽量把样式文件合并，减少请求次数。</li>
+<li>把首屏的样式文件独立出来，可以减少白屏时间。</li>
+<li>对CSS文件进行压缩</li>
+</ol>
+<h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><ol>
+<li>进行文件合并，减少请求次数。</li>
+<li>将<code>&lt;script&gt;</code>标签放在body的最后，可以避免“阻塞效应”。</li>
+<li><code>&lt;script&gt;</code>标签添加属性<code>defer=&quot;true&quot;</code>，其作用为：告诉浏览器等到DOM加载完成后，再执行脚本。可使JS文件下载与HTML解析并行执行。</li>
+<li><code>&lt;script&gt;</code>标签添加属性<code>async=&quot;true&quot;</code>，其作用为：告诉浏览器该JS文件不会修改DOM和样式，下载完成后立即执行。可使JS文件下载与HTML解析、CSS渲染并行执行。</li>
+</ol>
+<blockquote>
+<p> 当<code>defer</code>与<code>async</code>同时设置时，浏览器会忽略<code>defer</code>属性，其行为由<code>async</code>决定。</p>
+</blockquote>
+<h2 id="img"><a href="#img" class="headerlink" title="img"></a>img</h2><ol>
+<li>指定<code>img</code>的大小，当其加载完成后不用再对后方段落重新渲染。</li>
+<li>使用图片精灵技术，减少图片请求。</li>
+<li>用CSS代码实现简单图片效果。</li>
+</ol>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML/" rel="tag"># HTML</a>
+          
         </div>
       
+
+      
+        
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/26/css-background-02/" rel="next" title="CSS背景（二）">
+                <i class="fa fa-chevron-left"></i> CSS背景（二）
+              </a>
+            
+          </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          <span class="post-nav-divider"></span>
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/09/又是一篇总结/" itemprop="url">
-              
-                <span itemprop="name">半年更的自我总结</span>
-              
-            </a>
-        
-      </h1>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-09T14:58:45+08:00"
-              content="2017-09-09" >
-          09-09
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -336,6 +505,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDc2Mi83MzE0"></div>
+    
+  </div>
+
 
         </div>
         
@@ -355,8 +530,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -484,6 +668,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#主体加载流程"><span class="nav-number">1.</span> <span class="nav-text">主体加载流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优化加载、渲染速度，提高用户体验"><span class="nav-number">2.</span> <span class="nav-text">优化加载、渲染速度，提高用户体验</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML"><span class="nav-number">2.1.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS"><span class="nav-number">2.2.</span> <span class="nav-text">CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JS"><span class="nav-number">2.3.</span> <span class="nav-text">JS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#img"><span class="nav-number">2.4.</span> <span class="nav-text">img</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -602,11 +802,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
