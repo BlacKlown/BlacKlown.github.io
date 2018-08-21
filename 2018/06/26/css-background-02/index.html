@@ -95,16 +95,16 @@
 <meta property="og:site_name" content="BlacKlown's Blog">
 <meta property="og:description" content="在上一篇文章的基础上，只要进行一定的综合使用就能绘制出一些复杂的图像。
 棋盘背景由两种大小相同不同颜色的正方形块交替摆放制作成一个棋盘背景，具体实现参考下图：具体实现思路是先用一种颜色作为背景，再在其上用另一种颜色摆放方格。CSS不能简单的实现交替摆放的方格效果，需要用三角形图案进行拼接实现。需要用到上回说到的斜向条纹来实现三角形图案，在一个正方形的斜对角各设置一个占25%的三角形，如下方的第一个">
-<meta property="og:image" content="http://findheben.com/blog/2018/06/26/css-background-02/1.png">
-<meta property="og:image" content="http://findheben.com/blog/2018/06/26/css-background-02/2.png">
-<meta property="og:image" content="http://findheben.com/blog/2018/06/26/css-background-02/3.png">
-<meta property="og:image" content="http://findheben.com/blog/2018/06/26/css-background-02/4.png">
+<meta property="og:image" content="http://findheben.com/blog/blog/blog/2018/06/26/css-background-02/1.png">
+<meta property="og:image" content="http://findheben.com/blog/blog/blog/2018/06/26/css-background-02/2.png">
+<meta property="og:image" content="http://findheben.com/blog/blog/blog/2018/06/26/css-background-02/3.png">
+<meta property="og:image" content="http://findheben.com/blog/blog/blog/2018/06/26/css-background-02/4.png">
 <meta property="og:updated_time" content="2018-06-26T02:43:25.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS背景（二）">
 <meta name="twitter:description" content="在上一篇文章的基础上，只要进行一定的综合使用就能绘制出一些复杂的图像。
 棋盘背景由两种大小相同不同颜色的正方形块交替摆放制作成一个棋盘背景，具体实现参考下图：具体实现思路是先用一种颜色作为背景，再在其上用另一种颜色摆放方格。CSS不能简单的实现交替摆放的方格效果，需要用三角形图案进行拼接实现。需要用到上回说到的斜向条纹来实现三角形图案，在一个正方形的斜对角各设置一个占25%的三角形，如下方的第一个">
-<meta name="twitter:image" content="http://findheben.com/blog/2018/06/26/css-background-02/1.png">
+<meta name="twitter:image" content="http://findheben.com/blog/blog/blog/2018/06/26/css-background-02/1.png">
 
 
 
@@ -383,7 +383,7 @@
 
       
         <p>在上一篇文章的基础上，只要进行一定的综合使用就能绘制出一些复杂的图像。</p>
-<h1 id="棋盘背景"><a href="#棋盘背景" class="headerlink" title="棋盘背景"></a>棋盘背景</h1><p>由两种大小相同不同颜色的正方形块交替摆放制作成一个棋盘背景，具体实现参考下图：<br><img src="/2018/06/26/css-background-02/1.png" alt="棋盘背景1"><br>具体实现思路是先用一种颜色作为背景，再在其上用另一种颜色摆放方格。CSS不能简单的实现交替摆放的方格效果，需要用三角形图案进行拼接实现。需要用到上回说到的斜向条纹来实现三角形图案，在一个正方形的斜对角各设置一个占25%的三角形，如下方的第一个图案。再绘制一个同样的正方形并调整位置，如下方第二个图案。将其拼接起来就能实现想要的棋盘背景。<br><img src="/2018/06/26/css-background-02/2.png" alt="棋盘背景2"><br>核心代码：</p>
+<h1 id="棋盘背景"><a href="#棋盘背景" class="headerlink" title="棋盘背景"></a>棋盘背景</h1><p>由两种大小相同不同颜色的正方形块交替摆放制作成一个棋盘背景，具体实现参考下图：<br><img src="/blog/blog/2018/06/26/css-background-02/1.png" alt="棋盘背景1"><br>具体实现思路是先用一种颜色作为背景，再在其上用另一种颜色摆放方格。CSS不能简单的实现交替摆放的方格效果，需要用三角形图案进行拼接实现。需要用到上回说到的斜向条纹来实现三角形图案，在一个正方形的斜对角各设置一个占25%的三角形，如下方的第一个图案。再绘制一个同样的正方形并调整位置，如下方第二个图案。将其拼接起来就能实现想要的棋盘背景。<br><img src="/blog/blog/2018/06/26/css-background-02/2.png" alt="棋盘背景2"><br>核心代码：</p>
 <pre><code>background: pink;
 background-image:
     linear-gradient(45deg, skyblue 0, skyblue 25%,
@@ -392,7 +392,7 @@ background-image:
         transparent 0, transparent 75%, skyblue 0);
 background-position: 0 0, 25px 25px;
 background-size: 50px 50px;
-</code></pre><h1 id="箭头背景"><a href="#箭头背景" class="headerlink" title="箭头背景"></a>箭头背景</h1><p>类似与棋盘背景，箭头背景是由两个箭头交替摆放组成的背景，具体实现参考下图：<br><img src="/2018/06/26/css-background-02/3.png" alt="箭头背景1"><br>具体思路是先用与箭头朝向的相同的斜向条纹作为背景，可以作为箭头的尾部。再用三角形合理摆放作为箭头的头部即可，具体组合如下图：<br><img src="/2018/06/26/css-background-02/4.png" alt="箭头背景2"><br>核心代码：</p>
+</code></pre><h1 id="箭头背景"><a href="#箭头背景" class="headerlink" title="箭头背景"></a>箭头背景</h1><p>类似与棋盘背景，箭头背景是由两个箭头交替摆放组成的背景，具体实现参考下图：<br><img src="/blog/blog/2018/06/26/css-background-02/3.png" alt="箭头背景1"><br>具体思路是先用与箭头朝向的相同的斜向条纹作为背景，可以作为箭头的尾部。再用三角形合理摆放作为箭头的头部即可，具体组合如下图：<br><img src="/blog/blog/2018/06/26/css-background-02/4.png" alt="箭头背景2"><br>核心代码：</p>
 <pre><code>background-image: 
         linear-gradient(225deg, pink 25%, transparent 0),
         linear-gradient(225deg, pink 25%, transparent 0),
@@ -559,7 +559,7 @@ background-position: 0 0, 30px 30px, 30px 0, 0 30px, 0 0;
             
             <div class="site-state-item site-state-tags">
               <a href="/blog/tags/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
